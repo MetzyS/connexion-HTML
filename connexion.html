@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO HTML Formulaire - Connexion Needemand</title>
+    <style>
+        input[type="text"]:valid {
+            background-color: blue;
+        }
+
+        input[type="password"]:valid {
+            background-color: blue;
+        }
+
+        input[type="text"]:invalid {
+            background-color: red;
+        }
+
+        input[type="password"]:invalid {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label for="Mail">Adresse mail:</label>
+            <input type="text" name="mail" id="Mail" required pattern="^[a-zA-Z0-9._]+(@needemand.com)$">
+            <br>
+            <label for="Pw">Mot de passe:</label>
+            <input type="password" name="password" id="Pw" required pattern="^(?=.*\d)(?=.*\w)(?=.*[a-zA-Z]).{6,8}$">
+            <br><br>
+            <button type="submit">C'est Parti</button>
+            <button type="reset">Recommencer</button>
+        </form>
+    </main>
+</body>
+
+</html>
